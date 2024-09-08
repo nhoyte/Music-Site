@@ -1,0 +1,26 @@
+body {
+  background-color: rgb(61, 2, 39);
+}
+h1 {
+  font-family: "Playfair Display", serif;
+  font-size: 100px;
+  font-weight: 600;
+  text-transform: uppercase;
+  text-align: center;
+  color: white;
+  margin: 10px 10px 0 10px;
+}
+h2 {
+  font-family: "Baskervville SC", serif;
+  font-weight: 400;
+  text-align: center;
+  color: white;
+  margin: 0 0 55px 0;
+}
+p {
+  font-family: "Baskervville SC", serif;
+  font-weight: 800;
+  text-align: center;
+  color: white;
+  margin: 0;
+}
