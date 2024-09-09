@@ -1,31 +1,100 @@
 body {
-  background-color: rgb(61, 2, 39);
+  background-color: rgb(46 1 1);
+  text-align: center;
+  font-family: "Baskervville SC", serif;
+  color: white;
+}
+div.hero {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.731), rgb(0 0 0 / 50%)),
+    url(../images/heroImage.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+header {
+  padding: 300px 0 300px 0;
 }
 h1 {
   font-family: "Playfair Display", serif;
   font-size: 100px;
   font-weight: 600;
   text-transform: uppercase;
-  text-align: center;
-  color: white;
   margin: 10px 10px 0 10px;
 }
 h2 {
-  font-family: "Baskervville SC", serif;
+  font-size: 40px;
   font-weight: 400;
-  text-align: center;
-  color: white;
-  margin: 0 0 55px 0;
+  margin: 0 5px 15px 5px;
 }
-p {
-  font-family: "Baskervville SC", serif;
-  font-weight: 800;
-  text-align: center;
-  color: white;
+h3 {
+  padding: 8px;
+  font-weight: 900;
+  letter-spacing: 8px;
   margin: 0;
+}
+div.herobutton {
+  margin: 70px 5px 30px 5px;
+}
+a.header {
+  font-family: "Playfair Display", serif;
+  width: 145px;
+  height: 50px;
+  font-size: 20px;
+  font-weight: 600;
+  color: white;
+  text-decoration: none;
+  background-color: #6a0020;
+  padding: 16px 32px;
+  border: 1px solid #42010e;
+  border-radius: 100px;
 }
 footer {
   text-align: center;
   color: white;
   margin-top: 50px;
+}
+.outerContainer {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+.container {
+  max-width: 1200px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 10px;
+  margin: 10px auto;
+}
+.video {
+  width: 100%;
+  aspect-ratio: 9/3;
+}
+
+@media (max-width: 900px) {
+  header {
+    padding: 200px 0 200px 0;
+  }
+  h1 {
+    font-size: 70px;
+    margin: 10px 10px 0 10px;
+  }
+  h2 {
+    font-size: 30px;
+    font-weight: 400;
+    margin: 0 5px 15px 5px;
+  }
+  h3 {
+    font-size: 18px;
+  }
+  div.herobutton {
+    margin: 45px 5px 25px 5px;
+  }
+  a.header {
+    width: 105px;
+    height: 30px;
+    font-size: 18px;
+    padding: 12px 28px;
+  }
+  .outerContainer {
+    max-width: 900px;
+  }
 }
