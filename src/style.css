@@ -12,7 +12,7 @@ div.hero {
   background-position: center;
 }
 header {
-  padding: 300px 0 300px 0;
+  padding: 240px 0;
 }
 h1 {
   font-family: "Playfair Display", serif;
@@ -33,7 +33,7 @@ h3 {
   margin: 0;
 }
 div.herobutton {
-  margin: 70px 5px 30px 5px;
+  margin: 60px 5px 5px 5px;
 }
 a.header {
   font-family: "Playfair Display", serif;
@@ -53,8 +53,8 @@ footer {
   color: white;
   margin-top: 50px;
 }
-.outerContainer {
-  max-width: 1400px;
+div.outerContainer {
+  max-width: 1300px;
   margin: 0 auto;
 }
 .container {
@@ -71,7 +71,7 @@ footer {
 
 @media (max-width: 900px) {
   header {
-    padding: 200px 0 200px 0;
+    padding: 180px 0;
   }
   h1 {
     font-size: 70px;
