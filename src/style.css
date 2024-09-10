@@ -1,7 +1,12 @@
+:root {
+  --buttonColor: #824188;
+  --primaryFont: "Baskervville SC", serif;
+  --secondaryFont: "Poppins", sans-serif;
+}
 body {
   background-color: rgb(46 1 1);
   text-align: center;
-  font-family: "Baskervville SC", serif;
+  font-family: var(--primaryFont);
   color: white;
 }
 div.hero {
@@ -36,15 +41,16 @@ h3.header {
 div.herobutton {
   margin: 60px 5px 5px 5px;
 }
-a.header {
-  font-family: "Playfair Display", serif;
+a.header,
+a.aboutsection {
+  font-family: var(--secondaryFont);
   width: 145px;
   height: 50px;
   font-size: 20px;
   font-weight: 600;
   color: white;
   text-decoration: none;
-  background-color: #6a0020;
+  background-color: var(--buttonColor);
   padding: 16px 32px;
   border: 1px solid #42010e;
   border-radius: 100px;
@@ -61,12 +67,15 @@ div.footerContainer {
   margin-top: 50px;
   padding: 4px 10px;
   text-align: left;
-  font-family: "Playfair Display", serif;
+  font-family: var(--secondaryFont);
 }
 h3.footer {
-  font-size: 22px;
+  font-size: 20px;
+  padding: 5px 8px;
+  margin: 5px;
 }
 p.footer {
+  font-size: 18px;
   padding: 5px 10px;
   margin: 5px;
   line-height: 1.5;
@@ -79,23 +88,26 @@ div.outerContainer {
   max-width: 1300px;
   margin: 0 auto;
 }
-section {
+section.section1 {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-gap: 20px;
   padding: 15px;
-  margin: 50px 15px;
+  margin: 130px 15px 40px 15px;
 }
 div.aboutSection {
   text-align: justify;
   padding: 10px;
   margin: 25px 10px;
 }
-h2.section {
-  font-family: "Playfair Display", serif;
+h2.section1 {
+  font-family: var(--secondaryFont);
   font-weight: 600;
 }
-p.section {
+p.section1 {
+  font-family: var(--secondaryFont);
+  font-weight: 200;
+  font-size: 18px;
   margin-top: 15px;
   line-height: 1.3;
 }
@@ -103,6 +115,92 @@ img.sectionImage {
   max-width: 100%;
   border-radius: 35%;
   filter: sepia(30%) brightness(75%);
+}
+div.section2 {
+  margin: 0 5px 70px 5px;
+}
+div.aboutbutton {
+  margin-top: 60px;
+}
+h3.section2 {
+  padding-top: 75px;
+  margin: 10px 5px 5px 5px;
+  font-weight: 500;
+  letter-spacing: 5px;
+  text-shadow: 2px 4px 3px rgb(216, 215, 215);
+}
+h2.section2 {
+  font-weight: 600;
+  margin: 0 5px 85px 5px;
+}
+section.section2 {
+  background-image: linear-gradient(#2e010169, #2e0101c7),
+    url(../images/rainbowkingdom.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding: 10px 5px 100px 5px;
+  margin-bottom: 150px;
+}
+div.cardSection {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 25px;
+  margin: 25px 80px;
+}
+div.card {
+  border-radius: 5%;
+  background-color: whitesmoke;
+}
+h3.card,
+h4.card,
+p.cardBold,
+p.card {
+  color: black;
+  text-align: left;
+  font-family: var(--secondaryFont);
+  padding: 3px 25px;
+}
+.videocard {
+  width: 100%;
+  aspect-ratio: 16/9;
+  border-radius: 5%;
+}
+h3.card {
+  font-size: 22px;
+  font-weight: 700;
+  margin: 20px 0 0 0;
+}
+h4.card {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.3;
+}
+p.cardBold {
+  font-size: 20px;
+  font-weight: 700;
+  margin: 5px 0;
+}
+p.card {
+  font-size: 18px;
+  font-weight: 400;
+  margin: 0;
+}
+div.cardbutton {
+  justify-content: center;
+  margin: 55px 5px;
+  width: 100%;
+}
+a.musicsection {
+  font-family: var(--secondaryFont);
+  font-size: 18px;
+  font-weight: 400;
+  color: white;
+  text-decoration: none;
+  background-color: var(--buttonColor);
+  padding: 15px 120px;
+  border: 1px solid #42010e;
+  border-radius: 100px;
 }
 .container {
   max-width: 1200px;
@@ -155,5 +253,11 @@ img.sectionImage {
   p.footer {
     font-size: 15px;
     padding: 5px 0;
+  }
+  div.cardSection {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 25px;
+    margin: 25px 80px;
   }
 }
