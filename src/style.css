@@ -153,9 +153,9 @@ section.section2 {
 }
 div.cardSection {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(3, 0.5fr);
   grid-gap: 25px;
-  margin: 25px 80px;
+  margin: 35px 80px;
 }
 div.card {
   border-radius: 5%;
@@ -213,7 +213,8 @@ a.musicsection {
   color: white;
   text-decoration: none;
   background-color: var(--buttonColor);
-  padding: 15px 120px;
+  padding: 5% 20%;
+  /* padding: 15px 120px; */
   border: 1px solid #42010e;
   border-radius: 100px;
 }
@@ -246,7 +247,7 @@ section.section3 {
     padding: 180px 0;
   }
   h1 {
-    font-size: 70px;
+    font-size: 50px;
     margin: 10px 10px 0 10px;
   }
   h2 {
@@ -258,6 +259,7 @@ section.section3 {
     font-size: 18px;
   }
   div.herobutton {
+    font-size: 16px;
     margin: 45px 5px 25px 5px;
   }
   a.header {
@@ -266,8 +268,17 @@ section.section3 {
     font-size: 18px;
     padding: 12px 28px;
   }
+  a.aboutSection {
+    padding: 5% 20%;
+  }
   .outerContainer {
     max-width: 900px;
+  }
+  div.aboutSection {
+    text-align: left;
+  }
+  h2.section1 {
+    font-size: 28px;
   }
   div.footerContainer {
     grid-gap: 15px;
